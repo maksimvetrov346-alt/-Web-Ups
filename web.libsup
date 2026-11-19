@@ -1,0 +1,22 @@
+{
+{
+"name": "web"
+"commands": "web"
+}
+command create(1) {
+pnt("Введите режим 1 или 2")
+input line jim
+if jim == 1 {
+input line open
+web open(open)
+}
+elif jim == 2 {
+pnt("Сколько ждать")
+input line time
+input line open
+to wait time
+web open(open)
+end
+}
+}
+}
